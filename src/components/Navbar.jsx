@@ -17,7 +17,7 @@ const Navbar = () => {
         </svg>
 
       </button>
-      <a href="http://127.0.0.1:5500/src/index.html" className="nav-link text-2xl mb-2 md:mr-4 hover:text-blue-400">Home</a>
+      <a href="/" className="nav-link text-2xl mb-2 md:mr-4 hover:text-blue-400">Home</a>
       <a href="/home"
         className="nav-link text-2xl mb-2 md:mr-4 hover:text-blue-400">About</a>
       <a href="/services" className="nav-link text-2xl mb-2 md:mr-4 hover:text-blue-400">Services</a>
