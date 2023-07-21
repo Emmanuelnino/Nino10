@@ -3,38 +3,6 @@ import React from 'react';
 const Contact = () => {
   return (
     <div className="bg-gradient-to-r from-blue-500 to-blue-800 text-white min-h-screen">
-      {/* Navigation Bar */}
-      <nav className="bg-gray-800 text-white p-4">
-        <div className="container mx-auto">
-          <a href="#git" className="flex items-center">
-            <img src="../img/stone.jpeg" alt="Logo" className="w-8 h-8 mr-2" />
-            <span className="text-4xl text-blue-500 font-bold"></span>
-          </a>
-          <ul className="flex space-x-4">
-            <li>
-              <a href="http://127.0.0.1:5500/src/index.html" className="hover:text-blue-500">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="http://127.0.0.1:5500/src/about.html" className="hover:text-blue-500">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="http://127.0.0.1:5500/src/services.html" className="hover:text-blue-500">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-500 font-bold">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
       {/* Contact Section */}
       <section className="py-20">
         <div className="container mx-auto">
