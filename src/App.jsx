@@ -4,7 +4,6 @@ import Landing from './pages/Landing'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Services from './pages/Services'
-import Contact from './pages/contact'
 
 function App() {
 
@@ -15,7 +14,6 @@ function App() {
         <Route path='/' Component={Landing} />
         <Route path='/home' Component={Home}/>
         <Route path='/services' Component={Services}/>
-        <Route path='/contact' Component={Contact}/>
       </Routes>
     </>
   )
