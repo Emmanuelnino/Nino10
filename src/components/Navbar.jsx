@@ -13,55 +13,6 @@ const Navbar = () => {
         <img src="../img/stone.jpeg" alt="Logo" className="w-8 h-8 mr-2" />
         <span className="text-4xl text-blue-500 font-bold"></span>
       </a>
-      <nav
-        className={`nav ${
-          isNavOpen ? 'flex' : 'hidden'
-        } flex-col shadow-md w-[50%] h-full right-0 bg-white px-4 md:static md:h-auto md:w-auto md:flex-row md:shadow-none duration-500`}
-      >
-        <button
-          onClick={toggleNav}
-          className="close-nav relative top-0 right-0 text-right text-3xl md:hidden"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-        </button>
-        <a
-          href="/"
-          className="nav-link text-2xl mb-2 md:mr-4 hover:text-blue-400"
-        >
-          Home
-        </a>
-        <a
-          href="/home"
-          className="nav-link text-2xl mb-2 md:mr-4 hover:text-blue-400"
-        >
-          About
-        </a>
-        <a
-          href="/services"
-          className="nav-link text-2xl mb-2 md:mr-4 hover:text-blue-400"
-        >
-          Services
-        </a>
-        <a
-          href="/contact"
-          className="nav-link text-2xl mb-2 md:mr-4 hover:text-blue-400"
-        >
-          Contact
-        </a>
-      </nav>
       <button
         onClick={toggleNav}
         className="show-nav md:hidden text-3xl cursor-pointer"
@@ -81,6 +32,40 @@ const Navbar = () => {
           />
         </svg>
       </button>
+      <nav
+        className={`${
+          isNavOpen ? 'fixed' : 'hidden'
+        } top-0 left-0 h-full w-full bg-gray-800 p-6 text-white flex flex-col items-center justify-center md:hidden`}
+      >
+        <a
+          href="/"
+          className="nav-link text-2xl mb-4 hover:text-blue-400"
+          onClick={toggleNav}
+        >
+          Home
+        </a>
+        <a
+          href="/about"
+          className="nav-link text-2xl mb-4 hover:text-blue-400"
+          onClick={toggleNav}
+        >
+          About
+        </a>
+        <a
+          href="/services"
+          className="nav-link text-2xl mb-4 hover:text-blue-400"
+          onClick={toggleNav}
+        >
+          Services
+        </a>
+        <a
+          href="/contact"
+          className="nav-link text-2xl mb-4 hover:text-blue-400"
+          onClick={toggleNav}
+        >
+          Contact
+        </a>
+      </nav>
     </header>
   );
 };
