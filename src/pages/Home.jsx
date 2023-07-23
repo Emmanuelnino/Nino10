@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './Animation.css'
 
 const FeaturedSong = ({ image, title, artist }) => (
   <div className="song-card">
@@ -10,65 +12,32 @@ const FeaturedSong = ({ image, title, artist }) => (
 
 const HomePage = () => {
   return (
-    <div>
-      {/* Navigation Bar */}
-      <nav className="bg-gray-800 py-4 flex justify-between items-center">
-        <a href="#" className="text-white text-lg px-4 hover:text-gray-300">
-          Home
-        </a>
-        <a href="#" className="text-white text-lg px-4 hover:text-gray-300">
-          Songs
-        </a>
-        <a href="#" className="text-white text-lg px-4 hover:text-gray-300">
-          Artists
-        </a>
-        <a href="#" className="text-white text-lg px-4 hover:text-gray-300">
-          Albums
-        </a>
-        <a href="#" className="text-white text-lg px-4 hover:text-gray-300">
-          Playlists
-        </a>
-        <a href="#" className="text-white text-lg px-4 hover:text-gray-300">
-          About
-        </a>
-        <a href="#" className="text-white text-lg px-4 hover:text-gray-300">
-          Contact
-        </a>
-      </nav>
-
-      {/* Main Content Section */}
-      <section className="hero-section py-16 text-center">
-        <h1 className="text-4xl font-semibold">Welcome to Nino Music</h1>
-        <p className="text-gray-600 text-lg mt-4">
-          Discover the latest songs, albums, and artists.
+    <div className="bg-gradient-to-r from-blue-500 to-blue-800 text-white min-h-screen flex items-center justify-center">
+      <div className="text-center px-8">
+        <h1 className="text-4xl font-bold mb-6">Welcome to Nino Music App</h1>
+        <p className="text-lg mb-6">
+          Discover the latest songs, albums, and artists in the world of music.
         </p>
-        <a
-          href="#"
-          className="bg-red-500 text-white px-8 py-4 rounded-md mt-8 hover:bg-red-600 text-lg"
-        >
-          Explore Now
-        </a>
-      </section>
+        <div className="justify-center w-full flex gap-6">
+          {/* Replace the buttons with your desired links */}
+          <Link
+            to="/songs"
+            className="mt-8 bg-white text-blue-500 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-500 hover:text-white transition-colors duration-300"
+          >
+            Explore Songs
+          </Link>
+          <Link
+            to="/artists"
+            className="mt-8 bg-white text-blue-500 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-500 hover:text-white transition-colors duration-300"
+          >
+            Discover Artists
+          </Link>
+        </div>
 
-      {/* Featured Songs Section */}
-      <section className="featured-songs flex justify-center flex-wrap gap-8 p-8">
-        <FeaturedSong
-          image="song1.jpg"
-          title="Song Title 1"
-          artist="Artist Name 1"
-        />
-        <FeaturedSong
-          image="song2.jpg"
-          title="Song Title 2"
-          artist="Artist Name 2"
-        />
-        <FeaturedSong
-          image="song3.jpg"
-          title="Song Title 3"
-          artist="Artist Name 3"
-        />
-        {/* Add more song cards here */}
-      </section>
+        <div className="mt-6 gap-6 items-center justify-center flex w-full">
+          {/* Add your social media icons here */}
+        </div>
+      </div>
     </div>
   );
 };
