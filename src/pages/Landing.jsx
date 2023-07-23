@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <body className="bg-gradient-to-r from-blue-500 to-blue-800 text-white min-h-screen flex items-center justify-center">
       <div className="text-center px-8">
-        <h1 className="text-4xl font-bold mb-6">Welcome to STONEWRECKODDS</h1>
+        <h1 className="text-4xl font-bold mb-6">Welcome to STONEWRECKODDS.</h1>
         <p className="text-lg mb-6">We are a Zambian/UK based record label that fuses Hip-Hop with mind-blowing word play.</p>
         <div className='justify-center w-full flex gap-6'>
           <a href="../music/DOPE.mp3" download
