@@ -1,80 +1,53 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import bg from '../assets/stoneBg.svg';
 
 const Services = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-blue-800 text-white min-h-screen">
-      {/* Navigation Bar */}
-      <nav className="bg-gray-800 text-white p-4">
-        <div className="container mx-auto">
-          <a href="#git" className="flex items-center">
-            <img src="../img/stone.jpeg" alt="Logo" className="w-8 h-8 mr-2" />
-            <span className="text-4xl text-blue-500 font-bold"></span>
-          </a>
-          <ul className="flex space-x-4">
-            <li>
-              <a href="http://127.0.0.1:5500/src/index.html" className="hover:text-blue-500">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="http://127.0.0.1:5500/src/about.html" className="hover:text-blue-500">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-500 font-bold">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-500">
-                Contact
-              </a>
-            </li>
-          </ul>
+    <div className="text-black flex w-full flex-col items-center justify-center">
+      <section
+        style={{ backgroundImage: `url(${bg})` }}
+        className="text-center bg-cover bg-center h-full bg-no-repeat w-full px-8 min-h-screen py-20"
+      >
+        <h1 className="text-4xl font-extrabold mb-6">Our Services</h1>
+        <p className="text-lg text-zinc-400 mb-6">
+          We offer a variety of services to support and promote our artists and their music.
+        </p>
+        <div className="justify-center w-full items-center flex gap-3 md:gap-5">
+          <Link
+            to="/services/music-promotion"
+            className="mt-8 bg-white text-green-500 font-bold p-2 md:p-3 border border-green-100 rounded-lg shadow-lg md:shadow-xl hover:bg-green-500 hover:text-white transition-colors duration-300"
+          >
+            Music Promotion
+          </Link>
+          <Link
+            to="/services/music-production"
+            className="mt-8 bg-white text-green-500 font-bold p-2 md:p-3 border border-green
+            <Link
+            to="/services/music-production"
+            className="mt-8 bg-white text-green-500 font-bold p-2 md:p-3 border border-green-100 rounded-lg shadow-lg md:shadow-xl hover:bg-green-500 hover:text-white transition-colors duration-300"
+          >
+            Music Production
+          </Link>
+          <Link
+            to="/services/artist-management"
+            className="mt-8 bg-white text-green-500 font-bold p-2 md:p-3 border border-green-100 rounded-lg shadow-lg md:shadow-xl hover:bg-green-500 hover:text-white transition-colors duration-300"
+          >
+            Artist Management
+          </Link>
         </div>
-      </nav>
 
-      {/* Service Section */}
-      <section className="py-20">
-        <div className="container mx-auto">
-          <h1 className="text-4xl font-bold mb-8">Our Services</h1>
+        {/* Additional sections for each service */}
+        {/* Music Promotion */}
+        <section className="min-h-screen flex-col flex justify-center items-center w-full text-white bg-zinc-800">
+          <h2 className="text-3xl font-extrabold mb-4">Music Promotion</h2>
+          <p className="text-lg text-zinc-400 mb-8">
+            Our music promotion service helps artists reach a wider audience through targeted marketing and promotion campaigns.
+          </p>
+          {/* Add any additional content related to music promotion */}
+        </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service Item 1 */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="h-32 mb-4 bg-blue-500 rounded-lg"></div>
-              <h2 className="text-2xl font-bold mb-2">Music Production</h2>
-              <p className="text-lg">We offer professional music production services with top-notch quality.</p>
-              <a href="#" className="block mt-4 text-blue-500 font-bold hover:underline">
-                Learn More
-              </a>
-            </div>
+        {/* Music Production */}
+        <section className="min-h-screen flex-col flex justify-center items-center w-full text-black">
+          <h2 className="text-3xl font-extrabold mb-4">Music Production</h2>
 
-            {/* Service Item 2 */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="h-32 mb-4 bg-blue-500 rounded-lg"></div>
-              <h2 className="text-2xl font-bold mb-2">Song Distribution</h2>
-              <p className="text-lg">Distribute your music to various platforms and reach a broader audience.</p>
-              <a href="#" className="block mt-4 text-blue-500 font-bold hover:underline">
-                Learn More
-              </a>
-            </div>
-
-            {/* Service Item 3 */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="h-32 mb-4 bg-blue-500 rounded-lg"></div>
-              <h2 className="text-2xl font-bold mb-2">Artist Management</h2>
-              <p className="text-lg">Our experienced team provides artist management services to help you grow in the industry.</p>
-              <a href="#" className="block mt-4 text-blue-500 font-bold hover:underline">
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-};
-
-export default Services;

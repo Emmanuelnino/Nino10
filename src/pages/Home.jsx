@@ -12,31 +12,30 @@ const FeaturedSong = ({ image, title, artist }) => (
 
 const HomePage = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-blue-800 text-white min-h-screen flex items-center justify-center">
-      <div className="text-center px-8">
-        <h1 className="text-4xl font-bold mb-6">Welcome to the STONEWRECKODDS Music App</h1>
-        <p className="text-lg mb-6">
-          Discover the latest songs, albums, and music videos.
-        </p>
-        <div className="justify-center w-full flex gap-6">
-          {/* Replace the buttons with your desired links */}
-          <Link
-            to="/songs"
-            className="mt-8 bg-white text-blue-500 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-500 hover:text-white transition-colors duration-300"
-          >
-            Explore Songs
-          </Link>
-          <Link
-            to="/artists"
-            className="mt-8 bg-white text-blue-500 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-500 hover:text-white transition-colors duration-300"
-          >
-            Discover Art
-          </Link>
-        </div>
+    <div className="text-center px-8">
+      <h1 className="text-4xl font-bold mt-12 mb-6">Welcome to the STONEWRECKODDS Music App</h1>
+      <p className="text-lg mb-6">
+        We are a Zambian/UK based record label that fuses Hip-Hop with mind-blowing word play.
+        Discover the latest songs, albums, and music videos.
+      </p>
+      <div className='justify-center w-full items-center flex gap-3 md:gap-5'>
+        {/* Replace the buttons with your desired links */}
+        <Link
+          to="/songs"
+          className="mt-8 bg-white text-green-500 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-green-500 hover:text-white transition-colors duration-300"
+        >
+          Explore Songs
+        </Link>
+        <Link
+          to="/artists"
+          className="mt-8 bg-white text-green-500 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-green-500 hover:text-white transition-colors duration-300"
+        >
+          Discover Art
+        </Link>
+      </div>
 
-        <div className="mt-6 gap-6 items-center justify-center flex w-full">
-          {/* Add your social media icons here */}
-        </div>
+      <div className="mt-6 gap-6 items-center justify-center flex w-full">
+        {/* Add your social media icons here */}
       </div>
     </div>
   );
