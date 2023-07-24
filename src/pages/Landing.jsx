@@ -10,11 +10,10 @@ const Landing = () => {
         <p className="text-lg mb-6">We are a Zambian/UK based record label that fuses Hip-Hop with mind-blowing word play.</p>
         <div className='justify-center w-full flex gap-6'>
           <a href="../music/DOPE.mp3" download
-            className="mt-8 bg-white text-blue-500 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-500 hover:text-white transition-colors duration-300">Download
-            Some Vibes</a>
+            className="mt-8 bg-white text-blue-500 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-500 hover:text-white transition-colors duration-300">Download 9AM</a>
           <Link to="/home"
             className="mt-8 bg-white text-blue-500 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-500 hover:text-white transition-colors duration-300">Explore
-            More</Link>
+          </Link>
         </div>
 
         <div className='justify-center w-full flex mt-10 '

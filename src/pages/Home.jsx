@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Animation.css'
+
 
 const FeaturedSong = ({ image, title, artist }) => (
   <div className="song-card">
