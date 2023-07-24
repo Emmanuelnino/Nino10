@@ -8,10 +8,11 @@ const Navbar = () => {
   };
 
   return (
-    <header className="header flex justify-between px-5 py-2 font-serif">
-      <a href="/" className="flex items-center">
-        <img src={logo} alt="Logo" className="w-8 h-8 mr-2" />
-        <span className="text-4xl text-blue-500 font-bold"></span>
+    <header className="header flex justify-between md:px-10 px-5 bg-zinc-800 text-white py-5 items-center font-serif">
+      <a href="/" className="flex items-center gap-1">
+        <img src={logo} alt="Logo" className="h-12 w-12 rounded-full" />
+        <span className="md:flex hidden">Stone</span>
+        <span className="md:flex hidden">WreckOdds</span>
       </a>
       <button
         onClick={toggleNav}
@@ -32,6 +33,8 @@ const Navbar = () => {
           />
         </svg>
       </button>
+
+      {/* Mobile Nav */}
       <nav
         className={`${isNavOpen ? 'fixed' : 'hidden'
           } top-0 left-0 h-full w-full bg-gray-800 p-6 text-white flex flex-col items-center justify-center md:hidden`}
@@ -75,12 +78,14 @@ const Navbar = () => {
           Contact
         </a>
       </nav>
+
+      {/* Desktop Nav */}
       <div className='md:flex hidden'>
         <ul className="flex gap-3">
           <li>
             <a
               href="/"
-              className="nav-link text-2xl mb-4 hover:text-blue-400"
+              className="nav-link text-xl mb-4 hover:text-blue-400"
             >
               Home
             </a>
@@ -88,7 +93,7 @@ const Navbar = () => {
           <li>
             <a
               href="/about"
-              className="nav-link text-2xl mb-4 hover:text-blue-400"
+              className="nav-link text-xl mb-4 hover:text-blue-400"
             >
               About
             </a>
@@ -96,7 +101,7 @@ const Navbar = () => {
           <li>
             <a
               href="/services"
-              className="nav-link text-2xl mb-4 hover:text-blue-400"
+              className="nav-link text-xl mb-4 hover:text-blue-400"
             >
               Services
             </a>
@@ -104,7 +109,7 @@ const Navbar = () => {
           <li>
             <a
               href="/contact"
-              className="nav-link text-2xl mb-4 hover:text-blue-400"
+              className="nav-link text-xl mb-4 hover:text-blue-400"
             >
               Contact
             </a>
