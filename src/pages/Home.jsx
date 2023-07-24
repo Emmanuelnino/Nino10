@@ -14,9 +14,9 @@ const HomePage = () => {
   return (
     <div className="bg-gradient-to-r from-blue-500 to-blue-800 text-white min-h-screen flex items-center justify-center">
       <div className="text-center px-8">
-        <h1 className="text-4xl font-bold mb-6">Welcome to Nino Music App</h1>
+        <h1 className="text-4xl font-bold mb-6">Welcome to the STONEWRECKODDS Music App</h1>
         <p className="text-lg mb-6">
-          Discover the latest songs, albums, and artists in the world of music.
+          Discover the latest songs, albums, and music videos.
         </p>
         <div className="justify-center w-full flex gap-6">
           {/* Replace the buttons with your desired links */}
@@ -30,7 +30,7 @@ const HomePage = () => {
             to="/artists"
             className="mt-8 bg-white text-blue-500 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-500 hover:text-white transition-colors duration-300"
           >
-            Discover Artists
+            Discover Art
           </Link>
         </div>
 
