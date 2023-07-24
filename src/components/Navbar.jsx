@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='sticky top-0'>
+    <div className='sticky top-0 z-50'>
     <header className="header flex justify-between md:px-10 px-5 bg-zinc-800 text-white py-4 md:py-5 items-center font-serif">
       <a href="/" className="flex font-bold text-xl items-center gap-1">
         <img src={logo} alt="Logo" className="md:h-12 h-10 md:w-12 w-10 rounded-full" />
