@@ -2,8 +2,17 @@ import React from 'react'
 import music from '../img/music.gif'
 import { Link } from 'react-router-dom'
 import bg from '../assets/stoneBg.svg'
+import Image from '../components/image'
+import img1 from '../img/odds.jpeg'
+import img2 from '../img/troi.jpeg'
+import img3 from '../img/9am.jpeg'
 
 const Landing = () => {
+  const imgSrcArray = [
+    img1,
+    img2,
+    img3,
+  ];
   return (
     <div className=" text-black flex w-full flex-col items-center justify-center">
       <section style={{ backgroundImage: `url(${bg})` }} className="text-center bg-cover bg-center h-full bg-no-repeat w-full px-8 min-h-screen py-20">
@@ -87,12 +96,20 @@ const Landing = () => {
           <img className='rounded-full h-[250px] w-[250px] md:w-[300px] object-cover md:h-[300px]' src={music} alt="" />
         </div>
       </section>
-      {/* <section className='min-h-screen flex-col flex justify-center items-center w-full text-white bg-zinc-800'>
-        content
+      <section className='bg-black min-h-screen flex-col flex justify-center items-center w-full text-white'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
+          {/* Replace the 'imgSrcArray' with an array of image URLs */}
+          {imgSrcArray.map((imgSrc, index) => (
+            <div className='flex justify-center items-center' key={index}>
+              <img className='max-w-full' src={imgSrc} alt={`Image ${index + 1}`} />
+            </div>
+          ))}
+        </div>
       </section>
+
       <section className='min-h-screen flex-col flex justify-center items-center w-full text-black'>
         content
-      </section> */}
+      </section>
     </div>
   )
 }
