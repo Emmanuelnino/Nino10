@@ -6,12 +6,14 @@ import Image from '../components/image'
 import img1 from '../img/odds.jpeg'
 import img2 from '../img/troi.jpeg'
 import img3 from '../img/9am.jpeg'
+import img4 from '../img/music2.jpeg'
 
 const Landing = () => {
   const imgSrcArray = [
     img1,
     img2,
     img3,
+    img4,
   ];
   return (
     <div className=" text-black flex w-full flex-col items-center justify-center">
@@ -97,18 +99,23 @@ const Landing = () => {
         </div>
       </section>
       <section className='bg-black min-h-screen flex-col flex justify-center items-center w-full text-white'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
-          {/* Replace the 'imgSrcArray' with an array of image URLs */}
-          {imgSrcArray.map((imgSrc, index) => (
-            <div className='flex justify-center items-center' key={index}>
-              <img className='max-w-full' src={imgSrc} alt={`Image ${index + 1}`} />
-            </div>
-          ))}
-        </div>
+
+        <h1 className="text-4xl font-extrabold my-9">Stone<span className='text-green-400'>Gall3ry</span></h1>
+
+
+       
       </section>
 
       <section className='min-h-screen flex-col flex justify-center items-center w-full text-black'>
         content
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
+          {/* Replace the 'imgSrcArray' with an array of image URLs */}
+          {imgSrcArray.map((imgSrc, index) => (
+            <div className='flex justify-center items-center' key={index}>
+              <img className='max-w-full h-full object-full object-cover' src={imgSrc} alt={`Image ${index + 1}`} />
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   )
