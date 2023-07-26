@@ -100,10 +100,10 @@ const Landing = () => {
       </section>
       <section className='bg-black min-h-screen flex-col flex justify-center items-center w-full text-white'>
 
-        <h1 className="text-4xl font-extrabold ">Stone<span className='text-green-400'>Gall3ry</span></h1>
+        <h1 className="text-4xl font-extrabold my-9">Stone<span className='text-green-400'>Gall3ry</span></h1>
 
 
-       
+
       </section>
 
       <section className='min-h-screen flex-col flex justify-center items-center w-full text-black'>
