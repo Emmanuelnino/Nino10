@@ -114,14 +114,14 @@ const Landing = () => {
             ))}
           </div>
         </section>
-
+h
 
       </section>  
 
       <section className='min-h-screen flex-col flex justify-center items-center w-full text-black'>
 
         <div>
-          <h1>Stone <span className='text-green'>M3dia</span></h1>
+          <h1 className='text-3x1'>Stone <span className='text-green'>M3dia</span></h1>
         </div>
 
         <div className='grid w-full items-center justify-center grid-cols-1 lg:grid-cols-3 gap-4'>
