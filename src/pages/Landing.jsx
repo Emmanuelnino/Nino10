@@ -106,7 +106,7 @@ const Landing = () => {
 
         </div>
         <div>
-          
+
         </div>
         <div className='justify-center w-full flex mt-8 '
         >
@@ -134,6 +134,25 @@ const Landing = () => {
         <div>
           <h1 className='text-4x1 font-extrabold my-9'>Stone <span className='text-green-400'>M3dia</span></h1>
         </div>
+        <h2 className='text-3xl font-bold mb-4'>Meet the Hip Hop Artists</h2>
+        <p className='mb-8'>
+          <strong className='text-blue-600'>Rapper/Visuals:</strong> Meet the multifaceted artist Rapper/Visuals, who effortlessly weaves captivating rhymes while bringing a visually stunning experience to the stage. His lyrical prowess and creative visuals leave the audience in awe at every performance.
+        </p>
+        <p className='mb-8'>
+          <strong className='text-blue-600'>yxng Nino:</strong> yxng Nino is a talented Producer and Rapper, crafting infectious beats that perfectly complement his smooth flow. His music resonates with audiences, showcasing his versatility and passion for the craft.
+        </p>
+        <p className='mb-8'>
+          <strong className='text-blue-600'>Troi:</strong> Troi is a dynamic Producer and Rapper who knows how to captivate listeners with his unique sound. His production skills elevate his hard-hitting lyrics, creating an electrifying experience for hip hop enthusiasts.
+        </p>
+        <p className='mb-8'>
+          <strong className='text-blue-600'>YxngLaw:</strong> Meet YxngLaw, a rising star in the rap scene. His lyricism and delivery strike a chord with fans, delivering thought-provoking verses that address contemporary issues and personal experiences.
+        </p>
+        <p className='mb-8'>
+          <strong className='text-blue-600'>Mojie:</strong> Mojie, a rapper and producer, is a force to be reckoned with. His intricate beats and sharp verses showcase his dedication to the art form, making him an artist to watch out for.
+        </p>
+        <p className='mb-8'>
+          <strong className='text-blue-600'>Most Dope:</strong> As his name suggests, Most Dope exudes greatness. His rhymes are filled with raw emotions and authenticity, making him a powerful voice in the hip hop community.
+        </p>
 
         <div className='grid w-full items-center justify-center grid-cols-1 lg:grid-cols-3 gap-4'>
           {/* Replace the 'imgSrcArray' with an array of image URLs */}
