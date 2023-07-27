@@ -19,6 +19,14 @@ const Landing = () => {
     img3,
 
   ];
+  const artists = [
+    { name: 'Rapper/Visuals', details: 'Meet the multifaceted artist Rapper/Visuals, who effortlessly weaves captivating rhymes while bringing a visually stunning experience to the stage. His lyrical prowess and creative visuals leave the audience in awe at every performance.' },
+    { name: 'yxng Nino', details: 'yxng Nino is a talented Producer and Rapper, crafting infectious beats that perfectly complement his smooth flow. His music resonates with audiences, showcasing his versatility and passion for the craft.' },
+    { name: 'Troi', details: 'Troi is a dynamic Producer and Rapper who knows how to captivate listeners with his unique sound. His production skills elevate his hard-hitting lyrics, creating an electrifying experience for hip hop enthusiasts.' },
+    { name: 'YxngLaw', details: 'Meet YxngLaw, a rising star in the rap scene. His lyricism and delivery strike a chord with fans, delivering thought-provoking verses that address contemporary issues and personal experiences.' },
+    { name: 'Mojie', details: 'Mojie, a rapper and producer, is a force to be reckoned with. His intricate beats and sharp verses showcase his dedication to the art form, making him an artist to watch out for.' },
+    { name: 'Most Dope', details: 'As his name suggests, Most Dope exudes greatness. His rhymes are filled with raw emotions and authenticity, making him a powerful voice in the hip hop community.' },
+  ];
   return (
     <div className=" text-black flex w-full flex-col items-center justify-center">
       <section style={{ backgroundImage: `url(${bg})` }} className="text-center bg-cover bg-center h-full bg-no-repeat w-full px-8 min-h-screen py-20">
