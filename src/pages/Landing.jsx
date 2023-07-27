@@ -106,7 +106,7 @@ const Landing = () => {
 
         <h1 className="text-4xl font-extrabold my-9">Stone<span className='text-green-400'>Gall3ry</span></h1>
 
-        <p>This is our gallery </p>
+        <p className='mb-5'>This is our gallery </p>
         <section className='min-h-screen flex justify-center items-center w-full text-black'>
           <div className='grid grid-cols-1 sm:grid-cols-2 justify-center items-center lg:grid-cols-4 gap-4'>
             {imgArray.map((imgSrc, index) => (
