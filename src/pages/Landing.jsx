@@ -81,7 +81,7 @@ const Landing = () => {
           </a>
 
           {/* Apple */}
-          <a href="" className='group flex gap-1 flex-col'>
+          <a href="https://music.apple.com/ch/artist/stonewreckodds/165524673" className='group flex gap-1 flex-col'>
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -106,7 +106,7 @@ const Landing = () => {
 
         <h1 className="text-4xl font-extrabold my-9">Stone<span className='text-green-400'>Gall3ry</span></h1>
 
-        <p className='mb-5'>This is our gallery </p>
+        <p className='mb-2'>This is our gallery </p>
         <section className='min-h-screen flex justify-center items-center w-full text-black'>
           <div className='grid grid-cols-1 sm:grid-cols-2 justify-center items-center lg:grid-cols-4 gap-4'>
             {imgArray.map((imgSrc, index) => (
@@ -116,10 +116,14 @@ const Landing = () => {
         </section>
 
 
-      </section>
+      </section>  
 
       <section className='min-h-screen flex-col flex justify-center items-center w-full text-black'>
-        content
+
+        <div>
+          <h1>Stone <span className='text-green'>M3dia</span></h1>
+        </div>
+
         <div className='grid w-full items-center justify-center grid-cols-1 lg:grid-cols-3 gap-4'>
           {/* Replace the 'imgSrcArray' with an array of image URLs */}
           {imgSrcArray.map((imgSrc, index) => (
@@ -129,6 +133,7 @@ const Landing = () => {
           ))}
         </div>
       </section>
+
     </div>
   )
 }
