@@ -136,7 +136,7 @@ const Landing = () => {
         </div>
         <h2 className='text-3xl font-bold mb-4'>Meet the Hip Hop Artists</h2>
         <p className='mb-8'>
-          <strong className='text-blue-600'>Rapper/Visuals:</strong> Meet the multifaceted artist Rapper/Visuals, who effortlessly weaves captivating rhymes while bringing a visually stunning experience to the stage. His lyrical prowess and creative visuals leave the audience in awe at every performance.
+          <strong className='text-blue-600'><strong>Trun</strong> Rapper/Visuals:</strong> Meet the multifaceted artist Rapper/Visuals, who effortlessly weaves captivating rhymes while bringing a visually stunning experience to the stage. His lyrical prowess and creative visuals leave the audience in awe at every performance.
         </p>
         <p className='mb-8'>
           <strong className='text-blue-600'>yxng Nino:</strong> yxng Nino is a talented Producer and Rapper, crafting infectious beats that perfectly complement his smooth flow. His music resonates with audiences, showcasing his versatility and passion for the craft.
