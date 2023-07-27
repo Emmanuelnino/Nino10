@@ -97,6 +97,9 @@ const Landing = () => {
           </a>
 
         </div>
+        <div>
+          
+        </div>
         <div className='justify-center w-full flex mt-8 '
         >
           <img className='rounded-full h-[250px] w-[250px] md:w-[300px] object-cover md:h-[300px]' src={music} alt="" />
