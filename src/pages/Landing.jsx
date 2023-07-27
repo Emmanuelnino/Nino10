@@ -121,7 +121,7 @@ h
       <section className='min-h-screen flex-col flex justify-center items-center w-full text-black'>
 
         <div>
-          <h1 className='text-3x1 font-extrabold my-9'>Stone <span className='text-green-400'>M3dia</span></h1>
+          <h1 className='text-4x1 font-extrabold my-9'>Stone <span className='text-green-400'>M3dia</span></h1>
         </div>
 
         <div className='grid w-full items-center justify-center grid-cols-1 lg:grid-cols-3 gap-4'>
