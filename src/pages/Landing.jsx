@@ -116,7 +116,7 @@ const Landing = () => {
         </section>
 
 
-      </section>  
+      </section>
 
       <section className='min-h-screen flex-col flex justify-center items-center w-full text-black'>
 
