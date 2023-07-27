@@ -36,7 +36,7 @@ const Landing = () => {
         <div className='mt-10 gap-6 items-center justify-center flex w-full'>
 
           {/* Spotify */}
-          <a href="" className='group flex gap-1 flex-col'>
+          <a href="https://distrokid.com/hyperflow/stonewreckodds1/9am" className='group flex gap-1 flex-col'>
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
