@@ -130,7 +130,7 @@ const Landing = () => {
           <div className='grid w-full items-center justify-center grid-cols-1 lg:grid-cols-3 gap-4'>
             {/* Replace the 'imgSrcArray' with an array of image URLs */}
             {imgSrcArray.map((imgSrc, index) => (
-              <div className='flex justify-center w-full items-center' key={index}>
+              <div className='flex justify-center flex-box w-full items-center' key={index}>
                 <img src={imgSrc} alt={`Image ${index + 1}`} />
               </div>
             ))}
