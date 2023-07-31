@@ -21,10 +21,21 @@ const Landing = () => {
   ];
   const YourComponent = () => {
     const imgSrcArray = [
-      'image_url_1.jpg',
-      'image_url_2.jpg',
-      'image_url_3.jpg',
-
+      {
+        url: 'image_url_1.jpg',
+        title: 'Song 1',
+        artist: 'Artist 1',
+        albumCover: 'album_cover_url_1.jpg',
+        duration: '3:30',
+      },
+      {
+        url: 'image_url_2.jpg',
+        title: 'Song 2',
+        artist: 'Artist 2',
+        albumCover: 'album_cover_url_2.jpg',
+        duration: '4:15',
+      },
+    
     ];
   }
 
@@ -132,9 +143,14 @@ const Landing = () => {
 
         <section className='min-h-screen flex-col flex justify-center items-center w-full text-black bg-gray-100'>
       <div className='grid w-full gap-4 lg:grid-cols-3'>
-        {imgSrcArray.map((imgSrc, index) => (
-          <div className='flex justify-center items-center' key={index}>
-            <img className='w-56 h-56 object-cover' src={imgSrc} alt={`Image ${index + 1}`} />
+        {imgSrcArray.map((song, index) => (
+          <div className='flex flex-col items-center' key={index}>
+            <img className='w-56 h-56 object-cover' src={img3} alt={`Image ${index + 1}`} />
+            <div className='mt-2'>
+              <p className='text-lg font-bold'>{song.title}9AM</p>
+              <p className='text-sm text-gray-600'>{song.artist}9AM - Stonewreckodds</p>
+              <p className='text-sm text-gray-600'>{song.duration}04:30</p>
+            </div>
           </div>
         ))}
       </div>
