@@ -13,7 +13,7 @@ const FeaturedSong = ({ image, title, artist }) => (
 const HomePage = () => {
   return (
     <div className="text-center px-8">
-      <h1 className="text-4xl font-bold mt-12 mb-6">Welcome to the STONE <span className='text-green-400'>WRECKODS</span> Music App</h1>
+      <h1 className="text-4xl font-bold mt-12 mb-6">Welcome to the STONE <span className='text-green-400'>WRECKODDS</span> Music App</h1>
       <p className="text-lg text-zinc-400 mb-6">
         We are a Zambian/UK based record label that fuses Hip-Hop with mind-blowing word play.
         Discover the latest songs, albums, and music videos.
