@@ -7,6 +7,7 @@ import img1 from '../img/odds.jpeg'
 import img2 from '../img/troi.jpeg'
 import img3 from '../img/9am.jpeg'
 import img4 from '../img/music2.jpeg'
+import img5 from '../img/Divide.jpeg'
 
 const Landing = () => {
   const imgSrcArray = [
@@ -16,20 +17,20 @@ const Landing = () => {
   const imgArray = [
     img1,
     img2,
-    img3,
+    
 
   ];
   const YourComponent = () => {
     const imgSrcArray = [
       {
-        url: 'image_url_1.jpg',
+        url: '',
         title: 'Song 1',
         artist: 'Artist 1',
         albumCover: 'album_cover_url_1.jpg',
         duration: '3:30',
       },
       {
-        url: 'image_url_2.jpg',
+        url: '.jpg',
         title: 'Song 2',
         artist: 'Artist 2',
         albumCover: 'album_cover_url_2.jpg',
