@@ -164,7 +164,7 @@ const Landing = () => {
               <img className='w- h-56 object-cover' src={img3} alt={`Image ${index + 1}`} />
               <div className='mt-2'>
                 <p className='text-lg font-bold'>{song.title}</p>
-                <p className='text-sm text-gray-600'>{song.artist}9AM - Stonewreckodds</p>
+                <p className='text-sm text-gray-600'>{song.artist}- ZipLocK</p>
                 <p className='text-sm text-gray-600'>{song.duration}</p>
               </div>
             </div>
