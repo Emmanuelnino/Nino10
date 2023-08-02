@@ -26,14 +26,21 @@ const Landing = () => {
       {
         url: '',
         title: 'Song 1',
-        artist: 'Artist 1',
+        artist: 'STONEWRECKODDS',
         albumCover: img7,
         duration: '3:30',
       },
       {
         url: '.jpg',
-        title: 'Song 2',
-        artist: 'Artist 2',
+        title: 'UpOne',
+        artist: 'STONEWRECKODDS',
+        albumCover: img7,
+        duration: '4:15',
+      },
+      {
+        url: '.jpg',
+        title: 'Dope For Real',
+        artist: 'STONEWRECKODDS',
         albumCover: img8,
         duration: '4:15',
       },
@@ -156,7 +163,7 @@ const Landing = () => {
             <div className='flex flex-col items-center w-full' key={index}>
               <img className='w- h-56 object-cover' src={img3} alt={`Image ${index + 1}`} />
               <div className='mt-2'>
-                <p className='text-lg font-bold'>{song.title}9AM</p>
+                <p className='text-lg font-bold'>{song.title}</p>
                 <p className='text-sm text-gray-600'>{song.artist}9AM - Stonewreckodds</p>
                 <p className='text-sm text-gray-600'>{song.duration}03:30</p>
               </div>
