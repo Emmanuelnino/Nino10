@@ -165,7 +165,7 @@ const Landing = () => {
               <div className='mt-2'>
                 <p className='text-lg font-bold'>{song.title}</p>
                 <p className='text-sm text-gray-600'>{song.artist}9AM - Stonewreckodds</p>
-                <p className='text-sm text-gray-600'>{song.duration}03:30</p>
+                <p className='text-sm text-gray-600'>{song.duration}</p>
               </div>
             </div>
           ))}
