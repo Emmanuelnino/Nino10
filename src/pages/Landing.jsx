@@ -25,7 +25,7 @@ const Landing = () => {
     const imgSrcArray = [
       {
         url: '',
-        title: 'Song 1',
+        title: '9AM',
         artist: 'STONEWRECKODDS',
         albumCover: img7,
         duration: '3:30',
@@ -46,8 +46,8 @@ const Landing = () => {
       },
       {
         url: '.jpg',
-        title: 'Song 2',
-        artist: 'Artist 2',
+        title: 'Divide',
+        artist: 'STONEWRECKODDS',
         albumCover: img8,
         duration: '4:15',
       },
