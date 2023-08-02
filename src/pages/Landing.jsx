@@ -13,35 +13,40 @@ import img7 from '../img/Up1.jpeg'
 import img8 from '../img/Dope4.jpeg'
 
 const Landing = () => {
-  const imgSrcArray = [
 
-    img4,
-  ];
   const imgArray = [
     img1,
     img2,
+    img5,
     
 
   ];
-  const YourComponent = () => {
+ 
     const imgSrcArray = [
       {
         url: '',
         title: 'Song 1',
         artist: 'Artist 1',
-        albumCover: 'album_cover_url_1.jpg',
+        albumCover: img7,
         duration: '3:30',
       },
       {
         url: '.jpg',
         title: 'Song 2',
         artist: 'Artist 2',
-        albumCover: 'album_cover_url_2.jpg',
+        albumCover: img8,
+        duration: '4:15',
+      },
+      {
+        url: '.jpg',
+        title: 'Song 2',
+        artist: 'Artist 2',
+        albumCover: img8,
         duration: '4:15',
       },
 
     ];
-  }
+ 
 
   return (
     <div className=" text-black flex w-full flex-col items-center justify-center">
@@ -145,11 +150,11 @@ const Landing = () => {
 
       </section>
 
-      <section className='min-h-screen md:flex-rol flex-col justify-center items-center w-full text-black bg-gray-100'>
-        <div className='grid w-full gap-4 lg:grid-cols-3'>
+      <section className='min-h-screen md:flex-row flex flex-col justify-center items-center w-full text-black bg-gray-100'>
+        <div className='grid w-full gap-4 md:grid-cols-3'>
           {imgSrcArray.map((song, index) => (
-            <div className='flex flex-col items-center' key={index}>
-              <img className='w-56 h-56 object-cover' src={img3} alt={`Image ${index + 1}`} />
+            <div className='flex flex-col items-center w-full' key={index}>
+              <img className='w- h-56 object-cover' src={img3} alt={`Image ${index + 1}`} />
               <div className='mt-2'>
                 <p className='text-lg font-bold'>{song.title}9AM</p>
                 <p className='text-sm text-gray-600'>{song.artist}9AM - Stonewreckodds</p>
@@ -158,54 +163,7 @@ const Landing = () => {
             </div>
           ))}
         </div>
-        <div className='grid w-full gap-4 lg:grid-cols-3'>
-          {imgSrcArray.map((song, index) => (
-            <div className='flex flex-col items-center' key={index}>
-              <img className='w-56 h-56 object-cover' src={img5} alt={`Image ${index + 1}`} />
-              <div className='mt-2'>
-                <p className='text-lg font-bold'>{song.title}Divide</p>
-                <p className='text-sm text-gray-600'>{song.artist}Divide - Stonewreckodds</p>
-                <p className='text-sm text-gray-600'>{song.duration}02:30</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className='grid w-full gap-4 lg:grid-cols-3'>
-          {imgSrcArray.map((song, index) => (
-            <div className='flex flex-col items-center' key={index}>
-              <img className='w-56 h-56 object-cover' src={img8} alt={`Image ${index + 1}`} />
-              <div className='mt-2'>
-                <p className='text-lg font-bold'>{song.title}Dope For Real</p>
-                <p className='text-sm text-gray-600'>{song.artist}Dope For Real - Stonewreckodds</p>
-                <p className='text-sm text-gray-600'>{song.duration}04:30</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className='grid w-full gap-4 lg:grid-cols-3'>
-          {imgSrcArray.map((song, index) => (
-            <div className='flex flex-col items-center' key={index}>
-              <img className='w-56 h-56 object-cover' src={img6} alt={`Image ${index + 1}`} />
-              <div className='mt-2'>
-                <p className='text-lg font-bold'>{song.title}9:20</p>
-                <p className='text-sm text-gray-600'>{song.artist}9:20 - Stonewreckodds</p>
-                <p className='text-sm text-gray-600'>{song.duration}03:20</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className='grid w-full gap-4 lg:grid-cols-3'>
-          {imgSrcArray.map((song, index) => (
-            <div className='flex flex-col items-center' key={index}>
-              <img className='w-56 h-56 object-cover' src={img7} alt={`Image ${index + 1}`} />
-              <div className='mt-2'>
-                <p className='text-lg font-bold'>{song.title}UpOne</p>
-                <p className='text-sm text-gray-600'>{song.artist}UpOne - Stonewreckodds</p>
-                <p className='text-sm text-gray-600'>{song.duration}04:50</p>
-              </div>
-            </div>
-          ))}
-          </div>
+       
       </section>
     </div>
   )
