@@ -18,6 +18,8 @@ const Landing = () => {
     img1,
     img2,
     img5,
+    img7,
+    img8,
     
 
   ];
@@ -161,7 +163,7 @@ const Landing = () => {
         <div className='grid w-full gap-4 md:grid-cols-3'>
           {imgSrcArray.map((song, index) => (
             <div className='flex flex-col items-center w-full' key={index}>
-              <img className='w- h-56 object-cover' src={img3} alt={`Image ${index + 1}`} />
+              <img className='w- h-56 object-cover' src={img3,img7,img8} alt={`Image ${index + 1}`} />
               <div className='mt-2'>
                 <p className='text-lg font-bold'>{song.title}</p>
                 <p className='text-sm text-gray-600'>{song.artist}- ZipLocK</p>
