@@ -20,42 +20,42 @@ const Landing = () => {
     img5,
     img7,
     img8,
-    
+
 
   ];
- 
-    const imgSrcArray = [
-      {
-        url: '',
-        title: '9AM',
-        artist: 'STONEWRECKODDS',
-        albumCover: img7,
-        duration: '3:30',
-      },
-      {
-        url: '.jpg',
-        title: 'UpOne',
-        artist: 'STONEWRECKODDS',
-        albumCover: img7,
-        duration: '4:15',
-      },
-      {
-        url: '.jpg',
-        title: 'Dope For Real',
-        artist: 'STONEWRECKODDS',
-        albumCover: img8,
-        duration: '4:15',
-      },
-      {
-        url: '.jpg',
-        title: 'Divide',
-        artist: 'STONEWRECKODDS',
-        albumCover: img8,
-        duration: '4:15',
-      },
 
-    ];
- 
+  const imgSrcArray = [
+    {
+      url: '',
+      title: '9AM',
+      artist: 'STONEWRECKODDS',
+      albumCover: img7,
+      duration: '3:30',
+    },
+    {
+      url: '.jpg',
+      title: 'UpOne',
+      artist: 'STONEWRECKODDS',
+      albumCover: img7,
+      duration: '4:15',
+    },
+    {
+      url: '.jpg',
+      title: 'Dope For Real',
+      artist: 'STONEWRECKODDS',
+      albumCover: img8,
+      duration: '4:15',
+    },
+    {
+      url: 'Up1.jpeg',
+      title: 'Divide',
+      artist: 'STONEWRECKODDS',
+      albumCover: img8,
+      duration: '4:15',
+    },
+
+  ];
+
 
   return (
     <div className=" text-black flex w-full flex-col items-center justify-center">
@@ -160,10 +160,11 @@ const Landing = () => {
       </section>
 
       <section className='min-h-screen md:flex-row flex flex-col justify-center items-center w-full text-black bg-gray-100'>
+      <h1 className="text-4xl font-extrabold my-9">Stone<span className='text-green-400'>Gall3ry</span></h1>
         <div className='grid w-full gap-4 md:grid-cols-3'>
           {imgSrcArray.map((song, index) => (
             <div className='flex flex-col items-center w-full' key={index}>
-              <img className='w- h-56 object-cover' src={img3,img7,img8} alt={`Image ${index + 1}`} />
+              <img className='w- h-56 object-cover' src={img7} alt={`Image ${index + 1}`} />
               <div className='mt-2'>
                 <p className='text-lg font-bold'>{song.title}</p>
                 <p className='text-sm text-gray-600'>{song.artist}- ZipLocK</p>
@@ -172,7 +173,7 @@ const Landing = () => {
             </div>
           ))}
         </div>
-       
+
       </section>
     </div>
   )
