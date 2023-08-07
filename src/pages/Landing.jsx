@@ -159,8 +159,10 @@ const Landing = () => {
 
       </section>
 
-      <section className='min-h-screen md:flex-row flex flex-col justify-center items-center w-full text-black bg-gray-100'>
-      <h1 className="text-4xl font-extrabold my-9">Stone<span className='text-green-400'>Gall3ry</span></h1>
+      <section className='min-h-screen flex flex-col justify-center items-center w-full text-black bg-gray-100'>
+
+        <h1 className="text-4xl py-69 font-extrabold ">Stone<span className='text-green-400'>Albums</span></h1>
+
         <div className='grid w-full gap-4 md:grid-cols-3'>
           {imgSrcArray.map((song, index) => (
             <div className='flex flex-col items-center w-full' key={index}>
