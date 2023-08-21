@@ -143,7 +143,7 @@ const Landing = () => {
           <img className='rounded-full h-[250px] w-[250px] md:w-[300px] object-cover md:h-[300px]' src={music} alt="" />
         </div>
       </section>
-      <section className='bg-[#007e96] min-h-screen flex-col flex justify-center items-center w-full text-white'>
+      <section className='bg-[#27272a] min-h-screen flex-col flex justify-center items-center w-full text-white'>
 
         <h1 className="text-4xl font-extrabold my-9">Stone<span className='text-green-400'>Gall3ry</span></h1>
 
@@ -159,7 +159,7 @@ const Landing = () => {
 
       </section>
 
-      <section className='min-h-screen flex flex-col justify-center items-center w-full text-black bg-gray-100'>
+      <section className='py-69 min-h-screen flex flex-col justify-center items-center w-full text-black bg-gray-100'>
 
         <h1 className="text-4xl py-69 font-extrabold ">Stone<span className='text-green-400'>Albums</span></h1>
 
