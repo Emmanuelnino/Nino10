@@ -159,7 +159,7 @@ const Landing = () => {
 
       </section>
 
-      <section className='py-69 min-h-screen flex flex-col justify-center items-center w-full text-black bg-gray-100'>
+      <section className='min-h-screen flex flex-col justify-center items-center w-full text-black bg-gray-100'>
 
         <h1 className="text-4xl py-69 font-extrabold ">Stone<span className='text-green-400'>Albums</span></h1>
 
