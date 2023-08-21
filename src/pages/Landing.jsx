@@ -143,7 +143,7 @@ const Landing = () => {
           <img className='rounded-full h-[250px] w-[250px] md:w-[300px] object-cover md:h-[300px]' src={music} alt="" />
         </div>
       </section>
-      <section className='bg-black min-h-screen flex-col flex justify-center items-center w-full text-white'>
+      <section className='bg-[#007e96] min-h-screen flex-col flex justify-center items-center w-full text-white'>
 
         <h1 className="text-4xl font-extrabold my-9">Stone<span className='text-green-400'>Gall3ry</span></h1>
 
