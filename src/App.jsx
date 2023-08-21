@@ -5,11 +5,13 @@ import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Services from './pages/Services'
 import Explore from './pages/Explore'
+import Preloader from './components/Preloader'
 
 function App() {
 
   return (
     <>
+    <Preloader/>
     <Navbar/>
       <Routes>
         <Route path='/' Component={Landing} />
