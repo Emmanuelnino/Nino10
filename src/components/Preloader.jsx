@@ -3,7 +3,7 @@ const Preloader = () => {
  
   return (
     
-    <motion.div initial={{x:0}} whileInView={{x:"100%"}} transition={{duration:3,delay:2}}  className='absolute inset-0  bg-green-500 z-[69] '>Preloader</motion.div>
+    <motion.div initial={{x:0}} whileInView={{x:"100%"}} transition={{duration:3,delay:1}}  className='absolute inset-0  bg-green-500 z-[69] '>Preloader</motion.div>
   )
 }
 
